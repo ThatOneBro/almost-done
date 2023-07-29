@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Link from "next/link";
 import { Inter } from "next/font/google";
+
+import ProjectCreateForm from "~/components/project/ProjectCreateForm";
 
 import styles from "~/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function ProjectCreate() {
   return (
     <>
       <Head>
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Link href="/project/create">Testing</Link>
+        <ProjectCreateForm />
       </main>
     </>
   );
