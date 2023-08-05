@@ -15,7 +15,7 @@ const Modal: React.FC<{
   children: React.ReactNode;
 }> = ({
   title = "Modal",
-  setIsModalOpen = (open: boolean) => void 0,
+  setIsModalOpen = (_open: boolean) => void 0,
   isModalOpen = false,
   handleOk = () => void 0,
   onShow = () => void 0,

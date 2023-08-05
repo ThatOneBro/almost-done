@@ -6,14 +6,14 @@ import { Inter } from "next/font/google";
 
 import Modal from "~/components/generic/Modal";
 import ProjectCreateForm from "~/components/project/ProjectCreateForm";
-import { ProjectCreateContext } from "~/context/project";
+import { ModalContext } from "~/context/modal";
 
 import styles from "~/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function ProjectCreate() {
-  const { setIsModalOpen, isModalOpen } = useContext(ProjectCreateContext);
+  const { setIsModalOpen, isModalOpen } = useContext(ModalContext);
   const router = useRouter();
 
   useEffect(() => {
