@@ -8,14 +8,14 @@ import type { SchemaType } from "~/db/schema-type";
 let db: BetterSQLite3Database<SchemaType>;
 let schema: SchemaType;
 
-async function initializeDb() {
+async function initializeDbClient() {
   schema ??= await import("~/db/schema");
   return (await import("~/db/db")).default;
 }
 
 export async function getProjects() {
-  db ??= await initializeDb();
-  return await db.select().from(schema.projects);
+  db ??= await initializeDbClient();
+  return db.select().from(schema.projects).all();
 }
 
 export async function createProject() {}
