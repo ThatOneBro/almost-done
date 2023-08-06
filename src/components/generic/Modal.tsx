@@ -28,7 +28,7 @@ const Modal: React.FC<{
     if (isModalOpen && !wasOpen) {
       onShow();
     }
-  }, [isModalOpen]);
+  }, [onShow, isModalOpen, wasOpen]);
 
   const handleCancel = () => {
     setIsModalOpen(false);

@@ -22,7 +22,7 @@ export default function ProjectCreate() {
     return () => {
       setIsModalOpen(false);
     };
-  }, []);
+  }, [setIsModalOpen]);
 
   const onCancel = () => {
     router.push("/project");
