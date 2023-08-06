@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "migrate:create": "pnpm drizzle-kit generate:sqlite --schema=./src/db/schema.ts",
-    "migrate:apply": "tsx ./migrate.ts"
+    "migrate:apply": "tsx ./db/migrate.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
@@ -26,6 +26,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.2",
+    "server-only": "^0.0.1",
     "typescript": "5.1.6",
     "uuid": "^9.0.0"
   },
