@@ -2,11 +2,14 @@
   "name": "almost-done",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:create": "pnpm drizzle-kit generate:sqlite --schema=./src/db/schema.ts",
+    "migrate:apply": "tsx ./migrate.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
@@ -27,7 +30,9 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.4",
     "drizzle-kit": "^0.19.12",
-    "eslint-config-prettier": "^9.0.0"
+    "eslint-config-prettier": "^9.0.0",
+    "tsx": "^3.12.7"
   }
 }
