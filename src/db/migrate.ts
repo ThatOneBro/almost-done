@@ -3,7 +3,7 @@ import { drizzle } from "drizzle-orm/better-sqlite3";
 import { migrate } from "drizzle-orm/better-sqlite3/migrator";
 import Database from "better-sqlite3";
 
-const SQLITE_FILE = new URL("./data/local.db", import.meta.url)
+const SQLITE_FILE = new URL("../../data/local.db", import.meta.url)
   .toString()
   .replace("file://", "");
 

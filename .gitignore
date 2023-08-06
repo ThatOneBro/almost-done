@@ -1,5 +1,3 @@
 node_modules/
 .next/
-src/db/data/
-local.db
-.db-*
+data/
