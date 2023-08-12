@@ -44,7 +44,7 @@ pnpm start
 ## Deploying the App
 ### Vercel
 The the canonical way to deploy for now. Haven't test it yet but should work since it's a Next app.
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Future Plans
 Initially the app will be for weekly goal planning and daily to-do lists for short-term goals for various projects that are compiled into one daily to-do list for each day.
