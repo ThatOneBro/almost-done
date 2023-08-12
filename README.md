@@ -31,11 +31,14 @@ pnpm dev
 
 ### Other Dev Commands
 ```bash
-pnpm lint # Check if lint passes on the codebase
+# Check if lint passes on the codebase
+pnpm lint
 
-pnpm build # Build the production version of the app
+# Build the production version of the app
+pnpm build
 
-pnpm start # Starts a production server using the latest build
+# Starts a production server using the latest build
+pnpm start
 ```
 
 ## Deploying the App
