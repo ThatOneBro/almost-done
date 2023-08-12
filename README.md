@@ -1,5 +1,5 @@
 # AlmostDone
-Take your projects from AlmostDone🚧 to Done✅
+Take your projects from AlmostDone 🚧 to Done ✅
 
 ## Purpose
 This app is designed to serve a few purposes:
@@ -29,7 +29,7 @@ pnpm migrate:init # this runs `pnpm migrate:create` and `pnpm migrate:apply` seq
 pnpm dev
 ```
 
-### Other Dev Commands
+### Other dev commands
 ```bash
 # Check if lint passes on the codebase
 pnpm lint
