@@ -16,7 +16,7 @@ It's recommended that you use `pnpm` at this time for this project. Although we 
 
 ```bash
 # 1. Clone this repo and cd into it
-git clone git@github.com/ThatOneBro/almost-done.git && cd almost-done
+git clone git@github.com:ThatOneBro/almost-done.git && cd almost-done
 
 # 2. Install deps. It's recommended to use `pnpm` for now but we may switch to `bun` soon. 
 npm install -g pnpm@latest # In case you don't have pnpm installed yet
